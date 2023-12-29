@@ -1,0 +1,57 @@
+﻿@model FEPetServices.Form.VerifyOTPModel
+
+@{
+    ViewData["Title"] = "Xác minh Email";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VERIFY PASSWORD</title>
+    <link rel="stylesheet" href="~/css/VerifyEmail.css">
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form asp-controller="VerifyEmail" asp-action="Verify" method="post">
+                    <h2>Xác minh Email</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input asp-for="Email" class="form-control" required>
+                            <label for="">Email</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="number" class="form-control" asp-for="OTP_1" pattern="[0-9]">
+                            <input type="number" class="form-control" disabled asp-for="OTP_2" pattern="[0-9]">
+                            <input type="number" class="form-control" disabled asp-for="OTP_3" pattern="[0-9]">
+                            <input type="number" class="form-control" disabled asp-for="OTP_4" pattern="[0-9]">
+                            <input type="number" class="form-control" disabled asp-for="OTP_5" pattern="[0-9]">
+                            <input type="number" class="form-control" disabled asp-for="OTP_6" pattern="[0-9]">
+                        </div>
+                        
+                        <button id="verifyButton" type="submit" class="btn btn-primary">Xác minh</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+    <script>
+        const inputs = document.querySelectorAll('input[type="number"]');
+
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', (event) => {
+                if (event.target.value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].removeAttribute('disabled');
+                    inputs[index + 1].focus();
+                } else if (event.target.value.length === 0 && index < inputs.length - 1) {
+                    for (let i = index + 1; i < inputs.length; i++) {
+                        inputs[i].setAttribute('disabled', 'disabled');
+                        inputs[i].value = '';
+                    }
+                }
+            });
+        });
+    </script>
+</html>

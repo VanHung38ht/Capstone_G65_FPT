@@ -1,0 +1,277 @@
+﻿﻿﻿.service-style-2 .checkbox-wrapper:hover .check {
+    stroke-dashoffset: 0;
+}
+
+.service-style-2 .checkbox-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 15px;
+}
+
+    .service-style-2 .checkbox-wrapper .background {
+        fill: #FF6961;
+        transition: ease all 0.6s;
+        -webkit-transition: ease all 0.6s;
+    }
+
+    .service-style-2 .checkbox-wrapper .stroke {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        stroke-dashoffset: 100;
+        stroke-dasharray: 100;
+        transition: ease all 0.6s;
+        -webkit-transition: ease all 0.6s;
+    }
+
+    .service-style-2 .checkbox-wrapper .check {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        stroke-dashoffset: 22;
+        stroke-dasharray: 22;
+        transition: ease all 0.6s;
+        -webkit-transition: ease all 0.6s;
+    }
+
+    .service-style-2 .checkbox-wrapper input[type=checkbox] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        margin: 0;
+        opacity: 0;
+        -appearance: none;
+        -webkit-appearance: none;
+    }
+
+        .service-style-2 .checkbox-wrapper input[type=checkbox]:hover {
+            cursor: pointer;
+        }
+
+        .service-style-2 .checkbox-wrapper input[type=checkbox]:checked + svg .background {
+            fill: #77DD77;
+        }
+
+        .service-style-2 .checkbox-wrapper input[type=checkbox]:checked + svg .stroke {
+            stroke-dashoffset: 0;
+        }
+
+        .service-style-2 .checkbox-wrapper input[type=checkbox]:checked + svg .check {
+            stroke-dashoffset: 0;
+        }
+
+.form-group label {
+    background-color: #f9f3f0;
+}
+
+.form-control {
+    font-size: 25px;
+}
+
+.form-group label {
+    background-color: #f9f3f0;
+    z-index: 2;
+}
+
+.part3-content-fa {
+    display: flex;
+    justify-content: space-around;
+}
+
+.part3-content-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+.part3-content .form-control {
+    background-color: #f9f3f0;
+}
+
+    .part3-content .form-control:focus {
+        background-color: #f9f3f0;
+    }
+
+.check-valid {
+    margin-top: 10px;
+    display: flex;
+}
+
+#status-icon{
+    margin-top: -5px;
+}
+
+@media only screen and (max-width: 992px) {
+    .part3-content-child {
+        display: block;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .check-valid {
+        margin-top: 0px;
+    }
+
+    .part3-content-fa {
+        display: block;
+    }
+
+    .check-valid {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .datetime-fixsize{
+        width: 41%;
+    }
+}
+
+.rating-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.svg {
+    fill: rgb(242, 242, 242);
+    height: 3.6rem;
+    width: 3.6rem;
+    margin: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rating-form-2 svg {
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+#radios label {
+    position: relative;
+}
+
+.super-happy,
+[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+    .input,
+    [type="radio"] + svg {
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+
+    .super-happy[class="super-happy"]:hover + svg,
+    .super-happy[class="super-happy"]:checked + svg,
+    .super-happy[class="super-happy"]:focus + svg {
+        fill: rgb(0, 204, 79);
+    }
+
+.super-sad[class="super-sad"]:hover + svg,
+.super-sad[class="super-sad"]:checked + svg,
+.super-sad[class="super-sad"]:focus + svg {
+    fill: rgb(239, 42, 16);
+    transition: 1.5s;
+}
+
+.rating-form .lb {
+    margin-top: -5px;
+}
+
+.rating-form .status {
+    font-weight: 700;
+}
+
+.booking-room {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .booking-room button {
+        max-width: 200px;
+    }
+
+.booking-room-terms p {
+    color: black;
+}
+
+.booking-room-terms a {
+    color: dodgerblue;
+}
+
+.feedback-title-sort{
+    display: flex;
+    justify-content: space-between;
+}
+
+    .feedback-title-sort select{
+        color: darkorange;
+        font-size: 18px;
+        width: 150px;
+    }
+
+.pagination {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+    .pagination a {
+        font-size: 20px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+        border-radius: 50%;
+        border: none;
+        background-color: #d5d5d5;
+    }
+
+        .pagination a.active:hover {
+            background-color: lightskyblue;
+            color: whitesmoke;
+        }
+
+        .pagination a.active {
+            color: black;
+            background-color: #d5d5d5;
+        }
+
+        .pagination a.active1 {
+            background-color: lightskyblue;
+            color: whitesmoke;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: lightskyblue;
+            color: whitesmoke;
+        }
+
+.super-happy:hover {
+    fill: rgb(0, 204, 79);
+}

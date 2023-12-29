@@ -1,0 +1,96 @@
+﻿.pagination {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+    .pagination a {
+        font-size:20px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+        border-radius:50%;
+        border: none;
+        background-color: #d5d5d5;
+    }
+
+        .pagination a.active:hover {
+            background-color: lightskyblue;
+            color: whitesmoke;
+        }
+
+        .pagination a.active {
+            color: black;
+            background-color: #d5d5d5;
+        }
+
+            .pagination a.active1 {
+                background-color: lightskyblue;
+                color: whitesmoke;
+            }
+
+            .pagination a:hover:not(.active) {
+                background-color: lightskyblue;
+                color: whitesmoke;
+            }
+
+.shop-submenu li{
+    height: 36px;
+    width: max-content;
+}
+
+.shop-submenu ul {
+    max-height: 369px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: lightskyblue #888;
+}
+
+    .shop-submenu ul::-webkit-scrollbar {
+        width: 9px;
+        height: 9px;
+    }
+
+    .shop-submenu ul::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    .shop-submenu ul::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+    }
+
+        .shop-submenu ul::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+.thumbnail {
+    position: relative;
+}
+
+.out-of-stock-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+    font-size: 18px; 
+    font-weight: bold;
+    text-align: center;
+    height:80px;
+}
+
+    .out-of-stock-overlay::after {
+        content: "Hết hàng";
+    }

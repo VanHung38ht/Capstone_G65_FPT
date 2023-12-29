@@ -1,0 +1,16 @@
+﻿namespace FEPetServices.Form
+{
+    public class AccountInfo
+    {
+        public int AccountId { get; set; }
+        public string Email { get; set; } = null!;
+        public string Password { get; set; } = null!;
+        public bool Status { get; set; }
+        public int? UserInfoId { get; set; }
+        public int? PartnerInfoId { get; set; }
+        public string RoleName { get; set; }
+        public virtual PartnerInfo? PartnerInfo { get; set; }
+        public virtual UserInfo? UserInfo { get; set; }
+
+    }
+}

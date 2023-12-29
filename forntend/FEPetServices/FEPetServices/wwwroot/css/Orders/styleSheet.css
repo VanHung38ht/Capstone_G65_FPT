@@ -1,0 +1,315 @@
+﻿/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Card Styles */
+.card.right-profile-card {
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-body {
+    padding: 20px;
+}
+
+/* Navigation Pills Styles */
+.nav-pills {
+    background-color: #f8f9fa; /* Background color */
+    border-radius: 8px;
+}
+
+    .nav-pills .nav-link {
+        color: #495057; /* Text color */
+        background-color: #e2e6ea; /* Default tab background color */
+        border-radius: 8px;
+        margin-right: 5px;
+    }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .nav-link:hover {
+            color: #fff; /* Text color for active/hover state */
+            background-color: #007bff; /* Active tab background color */
+        }
+
+    /* Add some space between pills */
+    .nav-pills .nav-item {
+        margin-bottom: 5px;
+    }
+
+    /* Optional: Remove underlines from the links */
+    .nav-pills .nav-link {
+        text-decoration: none;
+    }
+
+    /* Optional: Add a subtle transition effect */
+    .nav-pills .nav-link {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+/* Work Container Styles */
+.work-container {
+    margin-bottom: 30px;
+}
+
+    .work-container h6 {
+        color: #007bff;
+    }
+
+    .work-container h4 {
+        color: #555;
+    }
+
+    .work-container p {
+        color: #777;
+    }
+
+.work-container-inner{
+    display:flex;
+    justify-content:space-between;
+}
+/* Timeline Styles */
+.timeline-centered {
+    position: relative;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.timeline-label {
+    margin-left: 60px;
+}
+
+/* Badge Styles */
+.badge-info {
+    background-color: #17a2b8;
+}
+span.badge {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    padding: 10px;
+}
+
+.work-container {
+    border-radius: 10px;
+    padding:2%; 
+    background-color: #fff;  
+}
+.card-body {
+    background-color: #e2e6ea;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-container {
+    flex: 1; 
+    border: 1px solid #ccc; 
+}
+
+.content-details {
+    margin-top: 10px; 
+}
+.content-details p{
+    color:black;
+}
+
+.content-detail {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+
+}
+    .bold-text {
+    font-weight: bold;
+    }
+    .content-detail img {
+        margin-right: 10px;
+    }
+.product-info{
+    display:flex;
+}
+.product-info-detail p{
+    margin:0;
+}
+.service-info {
+    display: flex;
+}
+
+.service-info-detail p {
+    margin: 0;
+}
+.headel-content{
+    display:flex;
+    justify-content:space-between;
+    border-top:1px solid rgb(0,0,0,.5);
+    padding-top:10px;
+}
+    .headel-content p {
+        font-weight: bold;
+        color: black;
+        margin-bottom: .5rem;
+    }
+
+.headel-content-typepay {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(0,0,0,.5);
+    padding-top: 10px;
+}
+
+    .headel-content-typepay p {
+        color: black;
+        margin-bottom: .5rem;
+    }
+.btn-content-detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+
+    .btn-content-detail button {
+        height:38px;
+        align-self: flex-end; 
+    }
+.room-info {
+    display: flex;
+}
+.room-info-detail p{
+    margin: 0;
+}
+.room-info-detail-service {
+    width: 550px;
+    display: flex;
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+.content-detail-time {
+    border-top: 1px solid rgb(0,0,0,.5);
+    padding-top: 10px;
+}
+content-detail-time-service {
+    padding-top: 10px;
+}
+.bill-header{
+    display:flex;
+    justify-content:center;
+}
+.bill-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.status-content-detail {
+    display: flex;
+    margin: 10px 0;
+}
+
+.search-order{
+    display :flex;
+    flex-direction:column;
+    padding:20px;
+}
+.search-order input {
+    border-radius: 10px;
+    padding: 2%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.btn-detail {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid;
+    width: 100px;
+    height: 40px;
+    background-color: #E21033;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-detail:hover{
+    color: black;
+}
+
+/* Thêm kiểu này cho lớp phủ */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+/* Cập nhật kiểu hiện tại cho cửa sổ popup khi nó được hiển thị */
+.custom-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+
+.popup-content {
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Cập nhật kiểu hiện tại cho cửa sổ popup khi nó được hiển thị */
+.custom-popup.show-popup {
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .timeline-icon {
+        top: 10px;
+    }
+}
+@media (max-width: 450px) {
+    .price-service-rooom {
+        display :none;
+    }
+}
+
+
